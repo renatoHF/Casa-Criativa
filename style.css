@@ -1,0 +1,30 @@
+
+body {
+    background: rgba(210, 218, 217, 0.842);
+    color: black;
+
+    text-align: center;
+}
+
+button {
+    color: #FF5E84;
+
+    border: none;
+
+    font-weight: bold;
+    background: none;
+}
+
+    button.fat {
+    color: white;
+    background: #FF5E84;
+}
+
+#footer a {
+    color: #25282b;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
