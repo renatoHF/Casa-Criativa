@@ -23,9 +23,7 @@ body {
 }
 
 
-.hide {
-    display: none;
-}
+
 
 a {
     color: #FF5E84;
@@ -159,9 +157,9 @@ footer a {
 
 
 
-/* modal */
+/* Modal */
 
-#modal {
+#Modal {
     background: #FF5E84;
 
     position: absolute;
@@ -169,36 +167,42 @@ footer a {
 
     width: 100vw;
     height: 100vh;
-
+    
     display: flex;
     justify-content: center;
 
-
+    transition: 400ms;
 
 }
 
-#modal .content {
+#Modal .content {
     margin-top: 128px;
 
     color: white;
 }
 
-#modal .content h1 {
+#Modal .content h1 {
     text-align: center;
 
     text-transform: uppercase;
 }
 
-#modal form {
+.content form {
     width: 80%;
     max-width: 800px;
 
     margin: 0 auto;
 
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
 }
 
-.input-wrapper {
-    margin: 16px 0;
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5) {
+    grid-column: span 2;
 }
 
 form input,
@@ -207,10 +211,14 @@ form textarea {
 
     padding: 12px;
 
+    box-sizing: border-box;
+
+
     border-radius: 6px;
     border: 1px solid rgba(141, 25, 52, 0.5);
 
     outline: none;
+
     font-size: 16px;
 }
 
@@ -218,4 +226,66 @@ form label {
     font-weight: 600;
     line-height: 32px;
     letter-spacing: 0.8px;
+}
+
+form a {
+
+    width: 150px;
+    height: 40px;
+
+    background-color: #ffffff22;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: bold;
+
+
+    border-radius: 6px;
+    
+    align-self: end;
+
+    transition: 400ms;
+}
+
+form a:hover {
+    background: #fff;
+    color: #FF5E84;
+
+    text-decoration: none;
+}
+
+form button {
+    background: white;
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-top: 32px;
+
+    grid-column: 2;
+
+    justify-self: end;
+
+    transition: 400ms;
+
+}
+
+form button:hover {
+    background-color: #0984e3;
+    color: white;
+
+    text-decoration: none;
+}
+
+#Modal.hide {
+    opacity: 0;
+    visibility: hidden;
 }
