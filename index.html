@@ -24,6 +24,7 @@
     <!-- Responsável por receber configurações da página -->
     <title>Casa Criativa</title>
     
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   
@@ -76,10 +77,10 @@
             <div class="content">
               <h3>Cursos De Programação</h3>
               <p>Estudo</p>
-              <div class="description"></div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui asperiores excepturi aperiam maxime voluptates inventore corrupti? Saepe maiores eligendi excepturi sapiente quam, cumque harum quas hic nemo voluptates quis.
+              <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui asperiores excepturi aperiam maxime voluptates inventore corrupti? Saepe maiores eligendi excepturi sapiente quam, cumque harum quas hic nemo voluptates quis.</div>
+              
+              <a href="#">Ir Para a Ideia</a>
             </div>
-            <a href="#">Ir Para a Ideia</a>
             
           </div>
           
@@ -91,10 +92,10 @@
             <div class="content">
               <h3>Exercícios</h3>
               <p>Saúde</p>
-              <div class="description"></div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui asperiores excepturi aperiam maxime voluptates inventore corrupti? Saepe maiores eligendi excepturi sapiente quam, cumque harum quas hic nemo voluptates quis.
+              <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui asperiores excepturi aperiam maxime voluptates inventore corrupti? Saepe maiores eligendi excepturi sapiente quam, cumque harum quas hic nemo voluptates quis.</div>
+              
+              <a href="#">Ir Para a Ideia</a>
             </div>
-            <a href="#">Ir Para a Ideia</a>
           </div>
           
           
@@ -106,17 +107,58 @@
             <div class="content">
               <h3>Meditação</h3>
               <p>Mentalidade</p>
-              <div class="description"></div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui asperiores excepturi aperiam maxime voluptates inventore corrupti? Saepe maiores eligendi excepturi sapiente quam, cumque harum quas hic nemo voluptates quis.
+              <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod qui asperiores excepturi aperiam maxime voluptates inventore corrupti? Saepe maiores eligendi excepturi sapiente quam, cumque harum quas hic nemo voluptates quis.</div>
+              
+              <a href="#">Ir Para a Ideia</a> 
             </div>
-            <a href="#">Ir Para a Ideia</a>
           </div>        
         
       </section>
-    </div>   
+    </div>
     
-  </body>
-  
-  <script src="scripts.js"></script>  
+    
+
+
+        <!-- modal -->
+        <div id="modal">
+            <div class="content">
+                <h1>Nova Ideia</h1>
+              
+              <form action="">
+              
+                <div class="input-wrapper">
+                  <label for="title">Título Da Ideia</label>
+                  <input type="text" name="title">
+                </div>
+              
+                <div class="input-wrapper"> 
+                  <label for="category">Categoria</label>
+                  <input type="text" name="category">
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="image">Link da Imagem</label>
+                  <input type="url" name="image">
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="description">Digite Uma Descrição Para Essa Ideia</label>
+                  <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="link">Link da Ideia</label>
+                  <input type="url" name="link">
+                </div>
+              
+                <button>Salvar</button>
+              
+                <form>
+
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>  
+    </body>
   
   </html>
